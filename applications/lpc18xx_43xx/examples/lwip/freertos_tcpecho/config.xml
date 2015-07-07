@@ -1,0 +1,15 @@
+<LPCOpenCfg>
+	<module name="freertos"/>
+	<template tool="xpresso" section="filelist">
+		<import src="${varLwIPBaseDir}/contrib/apps/tcpecho" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+	<template tool="xpresso" section="import" name="${varLwIPEnable}_lwip_src1">
+		<copy>arch/sys_arch_freertos.c</copy>
+	</template>
+	<template tool="xpresso" section="import" name="${varLwIPEnable}_lwip_inc1">
+		<copy>arch/sys_arch.h</copy>
+	</template>
+</LPCOpenCfg>

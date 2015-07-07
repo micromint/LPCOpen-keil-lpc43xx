@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>lwip_examples</WorkspaceName>
+
+  <project>
+    <PathAndName>..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\lib_lpc_chip_43xx.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+  </project>
+
+  <project>
+    <PathAndName>..\..\..\..\software\lpc_core\lpc_board\boards_43xx\bambino\lib_lpc_board_bambino.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lwip\sa_tcpecho\sa_tcpecho.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lwip\freertos_tcpecho\freertos_tcpecho.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lwip\sa_webserver\sa_webserver.uvproj</PathAndName>
+  </project>
+
+</ProjectWorkspace>

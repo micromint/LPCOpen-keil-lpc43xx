@@ -1,0 +1,6 @@
+<LPCOpenCfg>
+	<symbol name="varFatfsMCIEnable" value="${varFatfsEnable}"/>
+	<symbol name="varExampleDestInc" value="example/inc"/>
+	<symbol name="varLocalIncEnable" value="${varExampleEnable}"/>
+	<module name="fatfs"/>
+</LPCOpenCfg>

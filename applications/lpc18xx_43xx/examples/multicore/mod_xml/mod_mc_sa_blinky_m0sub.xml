@@ -1,0 +1,32 @@
+<LPCOpenCfg>
+	<!-- symbols section -->
+	<symbol name="varCPUCore"           value="m0"/>
+	<symbol name="varChipPart"          value="LPC${prjChipName}-M0"/>
+	<symbol name="varChipLibName"       value="lpc_chip_${prjChipFamily}_m0"/>
+	<symbol name="varBoardLibName"      value="lpc_board_${prjBoardName}_m0"/>
+	<symbol name="varExStartupFile"     value="cr_startup_lpc43xx_m0sub.c"/>
+	<symbol name="prjExampleSrcDir"     value="${varClassBaseDir}/sa_blinky_m0"/>
+	<symbol name="varExampleMemCfgFile" value="mem_${varMemTarget}_43xx_m0sub.xml" tool="xpresso"/>
+	<symbol name="varExampleMemCfgDir"  value="${prjDestToRoot}/${prjExampleBaseDir}/tool_configs/lpcxpresso_memory_xml" tool="xpresso"/>
+
+	<!-- templates section -->
+	<template section="cfglist" name="keil_mcb_4357_${varExampleName}" tool="xpresso">
+		<memoryConfiguration href="${varExampleMemCfgDir}/${varExampleMemCfgFile}"/>
+	</template>
+	<template section="filelist" tool="xpresso">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/common" dest="${varExampleDestInc}">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="filelist" tool="xpresso">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/common" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<exclude>m0_img_ldr.c</exclude>
+		</import>
+	</template>
+	<template section="setting" name="${varExampleFullName}_incdir" tool="xpresso">
+		<value>${workspace_loc:/${varChipLibName}/inc/config_m0sub}</value>
+	</template>
+	<module name="basic_example"/>
+
+</LPCOpenCfg>

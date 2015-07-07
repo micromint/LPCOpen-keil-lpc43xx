@@ -1,0 +1,14 @@
+<info flash_driver='LPC18_43_SPIFI_16MB_64KB.cfx'>
+ <chip>
+  <memory id='Flash' type='Flash' is_ro='true' can_program='true'></memory>
+  <memory id='RAM' type='RAM'></memory>
+   <memoryInstance id='RamLoc128' derived_from='RAM' location='0x10000000' size='0x20000'  />
+   <memoryInstance id='RamLoc72' derived_from='RAM' location='0x10080000' size='0x12000'  />
+   <memoryInstance id='RamAHB32' derived_from='RAM' location='0x20000000' size='0x8000'  />
+   <memoryInstance id='RamAHB16' derived_from='RAM' location='0x20008000' size='0x4000'  />
+   <memoryInstance id='RamAHB_ETB16' derived_from='RAM' location='0x2000c000' size='0x4000'  />
+   <memoryInstance id='RamM0Sub16' derived_from='RAM' location='0x18000000' size='0x4000'  />
+   <memoryInstance id='RamM0Sub2' derived_from='RAM' location='0x18004000' size='0x800'  />
+   <memoryInstance id='SPIFI' derived_from='Flash' location='0x14000000' size='0x400000'  edited='true'/>
+ </chip>
+</info>

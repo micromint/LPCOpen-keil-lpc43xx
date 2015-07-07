@@ -1,0 +1,11 @@
+<LPCOpenCfg>
+	<symbol name="varCPUCore"        value="m0"/>
+	<symbol name="varChipPart"       value="LPC${prjChipName}-M0"/>
+	<symbol name="varChipLibName"    value="lpc_chip_${prjChipFamily}_m0"/>
+	<module name="libchip"/>
+	<template section="filelist" name="lpc_chip_43xx_m0" tool="xpresso">
+		<import src="${varChipConfigDir}_m0app" dest="inc">
+			<include>*.h</include>
+		</import>
+	</template>
+</LPCOpenCfg>

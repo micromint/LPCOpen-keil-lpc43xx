@@ -1,0 +1,10 @@
+<LPCOpenCfg>
+	<symbol name="varUSBSIODir" value="${prjDestToRoot}/software/lpcusbsio"/>
+
+	<!-- TODO: May be create mod_libusbsio(??) -->
+	<template section="filelist" name="${varExampleEnable}" tool="xpresso">
+		<import src="${varUSBSIODir}" dest="${varExampleDestInc}">
+			<copy>lpcusbsio_i2c.h</copy>
+		</import>
+	</template>
+</LPCOpenCfg>

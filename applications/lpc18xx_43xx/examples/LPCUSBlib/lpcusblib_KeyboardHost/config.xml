@@ -1,0 +1,7 @@
+<LPCOpenCfg>
+	<template section="filelist" name="${varExampleEnable}" tool="xpresso">
+		<import src="${prjDestToRoot}/software/LPCUSBLib" dest="lpcusblib">
+			<copy>Drivers/USB/Class/Host/HIDClassHost.c</copy>
+		</import>
+	</template>
+</LPCOpenCfg>

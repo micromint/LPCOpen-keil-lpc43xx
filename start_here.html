@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+
+<script type="text/javascript">
+window.onload=function() {
+function countdown() {
+if ( typeof countdown.counter == 'undefined' ) {
+    countdown.counter = 15;
+    }
+if(countdown.counter > 0) {
+	document.getElementById('count').innerHTML = countdown.counter--;
+    setTimeout(countdown, 1000);
+    }
+else {
+    location.href = 'http://www.lpcware.com/content/project/lpcopen-platform-nxp-lpc-microcontrollers/lpcopen-v200-quickstart-guides';
+    }
+}
+countdown();
+};
+</script>
+
+</head>
+<body>
+
+<h1>Welcome to the LPCOpen platform!</h1>
+<h2>This page will be re-directed to the LPCOpen quickstart guides at <a href="http://www.lpcware.com/content/project/lpcopen-platform-nxp-lpc-microcontrollers/lpcopen-v200-quickstart-guides">LPCware.com</a> in <span id="count"></span> seconds.</h2>
+<i>You must have a internet connection to access the online quickstart guides.</i><br>
+<br>
+<b>Click <a href="http://www.lpcware.com/content/project/lpcopen-platform-nxp-lpc-microcontrollers/lpcopen-v2xx-online-documentation-and-help">here</a> to go to the LPCOpen online documentation pages.<br>
+<i>The online documentation pages cover include project guides, chip specific documentation trees, driver use examples, and links to other related resources.<br>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<LPCOpenCfg>
+	<symbol name="prjExampleBaseDir" value="applications/lpc18xx_43xx"/>
+	<symbol name="varChipConfigDir"  value="${varChipLibSrcDir}/config_${prjChipFamily}"/>
+	<symbol name="varCfgDestDir"     value="inc"/>
+	<module name="core_${varCPUCore}"/>
+	<template section="filelist" name="${varChipLibName}" tool="xpresso">
+		<import src="${varChipConfigDir}" dest="${varCfgDestDir}">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="import" name="${varChipLibName}_inc1" tool="xpresso">
+		<copy>../chip_common/sdmmc.h</copy>
+		<copy>../chip_common/error.h</copy>
+		<copy>../chip_common/stopwatch.h</copy>
+		<copy>../chip_common/iap.h</copy>
+	</template>
+	<template section="cfglist" name="${varChipLibName}" tool="xpresso">
+		<import src="${varChipLibSrcDir}/../usbd_rom" dest="inc/usbd">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="import" name="lpc_chip_18xx_inc" tool="xpresso">
+		<exclude>hsadc_18xx_43xx.h</exclude>
+	</template>
+	<template section="import" name="lpc_chip_18xx_src" tool="xpresso">
+		<exclude>hsadc_18xx_43xx.c</exclude>
+	</template>
+</LPCOpenCfg>

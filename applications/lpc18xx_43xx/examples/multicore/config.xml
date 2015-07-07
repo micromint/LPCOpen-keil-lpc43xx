@@ -1,0 +1,14 @@
+<LPCOpenCfg>
+	<symbol name="varClassBaseDir"   value="${prjExampleBaseDir}/examples/${prjCurrClassName}"/>
+	<symbol name="prjExampleSrcDir"  value="${varClassBaseDir}/mod_xml"/>
+	<symbol name="varMCModPath"      value="${prjRootFolder}/${varClassBaseDir}/mod_xml"/>
+	<symbol name="varLocalIncEnable" value="${varExampleEnable}"/>
+	<symbol name="varExampleDestInc" value="example/inc"/>
+
+	<!-- Symbols below to ignore subcore for all other boards except nxp_lpclink2_4370 -->
+	<symbol name="varExtraEx_nxp_lpclink2_4370" value="mc_sa_blinky_m0sub"/>
+	<symbol name="varExtraEx_${prjBoardName}" value="mc_dummy" options="default"/>
+	<symbol name="prjIgnoreList" value="mulitcore/mc_dummy"/>
+
+	<symbol name="prjExampleList"    value="libchip_m0|libboard_m0|mc_sa_blinky_m4|mc_sa_blinky_m0app|${varExtraEx_${prjBoardName}}"/>
+</LPCOpenCfg>

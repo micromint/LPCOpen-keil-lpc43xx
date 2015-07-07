@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>lpcusblib_host_examples</WorkspaceName>
+
+  <project>
+    <PathAndName>..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\lib_lpc_chip_43xx.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+  </project>
+
+  <project>
+    <PathAndName>..\..\..\..\software\lpc_core\lpc_board\boards_43xx\bambino\lib_lpc_board_bambino.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lpcusblib_host\usbhost_msc\usbhost_msc.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lpcusblib_host\usbhost_keyboard\usbhost_keyboard.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\lpcusblib_host\usbhost_audioout\usbhost_audioout.uvproj</PathAndName>
+  </project>
+
+</ProjectWorkspace>

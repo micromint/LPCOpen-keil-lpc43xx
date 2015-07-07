@@ -1,0 +1,31 @@
+<LPCOpenCfg>
+	<module name="basic_example"/>
+	<symbol name="prjIgnoreList"     value="LPCUSBlib/startup_code|${prjIgnoreList}"/>
+	<template section="filelist" name="${varExampleEnable}" tool="xpresso">
+		<import src="${prjDestToRoot}/software/LPCUSBLib" dest="lpcusblib">
+			<exclude>*Chips_Support*</exclude>
+			<exclude>*doc*</exclude>
+			<exclude>*UsersManual*</exclude>
+			<exclude>*Device*</exclude>
+			<exclude>*Endpoint*</exclude>
+			<exclude>*Events*.c</exclude>
+			<exclude>*OHCI*</exclude>
+			<exclude>*LPC11UXX*</exclude>
+			<exclude>*LPC17XX*</exclude>
+			<exclude>*DCD*</exclude>
+			<exclude>*Class*.c</exclude>
+		</import>
+	</template>
+	<template section="setting" name="${varExampleEnable}_incdir" tool="xpresso">
+		<value>${workspace_loc:/${ProjName}/lpcusblib/Drivers/USB}</value>
+	</template>
+	<template section="cfglist" name="${varExampleEnable}" tool="xpresso">
+		<setting id="compiler.dialect" mode="replace">
+			<value>gnu99</value>
+		</setting>
+	</template>
+	<template section="setting" name="${varExampleEnable}_cdef" tool="xpresso">
+		<value>${varChipFamilyDef}</value>
+		<value>USB_HOST_ONLY</value>
+	</template>
+</LPCOpenCfg>

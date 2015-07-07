@@ -1,0 +1,10 @@
+<LPCOpenCfg>
+	<symbol name="varClassBaseDir"  value="${prjExampleBaseDir}/examples/${prjCurrClassName}"/>
+	<symbol name="prjExampleSrcDir" value="${varClassBaseDir}/mod_xml"/>
+	<symbol name="varDCModPath"     value="${prjRootFolder}/${varClassBaseDir}/mod_xml"/>
+	<symbol name="varLibM0List"     value="libchip_m0|libboard_m0"/>
+	<symbol name="varBlinkyList"    value="dc_sa_blinky|dc_sa_blinky_m0|dc_freertos_blinky|dc_freertos_blinky_m0"/>
+	<symbol name="varLwIPList"      value="dc_sa_webserver|dc_freertos_webserver|dc_sa_webserver_m0|dc_freertos_webserver_m0"/>
+	<symbol name="varUSBList"       value="dc_sa_msc_ram|dc_sa_msc_ram_m0"/>
+	<symbol name="prjExampleList"   value="${varLibM0List}|${varBlinkyList}|${varLwIPList}|${varUSBList}"/>
+</LPCOpenCfg>

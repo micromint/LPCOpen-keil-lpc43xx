@@ -1,0 +1,5 @@
+<LPCOpenCfg>
+	<symbol name="varCPUCore" value="m4" options="default"/>
+	<symbol name="prjChipFamilyDir" value="chip_18xx_43xx"/>
+	<symbol name="varChipFamilyDef" value="__LPC43XX__"/>
+</LPCOpenCfg>

@@ -1,0 +1,28 @@
+LPCSpifilib version <0.05>
+==========================
+Release date <?/??/2014>
+TODO:
+Add MD5 to web page.
+
+Change Log:
+1. Comment cleanup.
+2. Added support for 40xx series
+3. Changed spifiInit() api to include spifi control register address.
+4. Changed spifiInitDevice() to include spifi control register address.
+
+Known issues: (carried forward)
+1. Option SPIFI_CAP_NOBLOCK is not implemented.
+2. Option SPIFI_CAP_SUBBLKERASE is not working.
+3. Device S25FL129P is un-tested.
+
+
+LPCSpifilib version <0.04>
+===========================
+Release date <4/25/2014>
+Change Log:
+1. Initial version.
+
+Known issues:
+1. Option SPIFI_CAP_NOBLOCK is not implemented.
+2. Option SPIFI_CAP_SUBBLKERASE is not working.
+3. Device S25FL129P is un-tested.

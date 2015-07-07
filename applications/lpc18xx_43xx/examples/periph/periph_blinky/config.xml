@@ -1,0 +1,8 @@
+<LPCOpenCfg>
+	<template tool="xpresso" section="filelist">
+		<import src="${varExampleSrcDir}/../periph_systick" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+</LPCOpenCfg>

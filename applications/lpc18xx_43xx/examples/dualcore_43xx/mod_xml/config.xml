@@ -1,0 +1,33 @@
+<LPCOpenCfg>
+	<!-- M0 library projects -->
+	<symbol name="varlibchip_m0_Module" value="libchip_m0"/>
+	<symbol name="varlibboard_m0_Module" value="libboard_m0"/>
+
+	<!-- Blinky standalone project -->
+	<symbol name="vardc_sa_blinky_m0_Module" value="dualcore_example_m0"/>
+
+	<!-- Blinky FreeRTOS project -->
+	<symbol name="vardc_freertos_blinky_Freertos" value="freertos"/>
+	<symbol name="vardc_freertos_blinky_m0_Freertos" value="freertos"/>
+	<symbol name="vardc_freertos_blinky_m0_Module" value="dualcore_example_m0"/>
+
+	<!-- Webserver standalone project -->
+	<symbol name="vardc_sa_webserver_Lwip"      value="lwip"/>
+	<symbol name="vardc_sa_webserver_m0_Lwip"   value="lwip"/>
+	<symbol name="vardc_sa_webserver_m0_Module" value="dualcore_example_m0"/>
+
+	<!-- Webserver freertos project -->
+	<symbol name="vardc_freertos_webserver_Freertos"    value="freertos"/>
+	<symbol name="vardc_freertos_webserver_m0_Freertos" value="freertos"/>
+	<symbol name="vardc_freertos_webserver_Lwip"        value="lwip"/>
+	<symbol name="vardc_freertos_webserver_m0_Lwip"     value="lwip"/>
+	<symbol name="vardc_freertos_webserver_m0_Module"   value="dualcore_example_m0"/>
+
+	<!-- USBD MSC standalone project -->
+	<symbol name="vardc_sa_msc_ramUsbdEn" value="${varExampleFullName}"/>
+	<symbol name="vardc_sa_msc_ram_m0UsbdEn" value="${varExampleFullName}"/>
+	<symbol name="vardc_sa_msc_ram_m0_Module" value="dualcore_example_m0"/>
+
+	<symbol name="var${prjCurrExampleName}_Module" value="dualcore_example" options="default"/>
+	<module name="${var${prjCurrExampleName}_Module}" path="${varDCModPath}"/>
+</LPCOpenCfg>

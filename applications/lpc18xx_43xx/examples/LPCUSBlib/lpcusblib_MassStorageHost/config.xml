@@ -1,0 +1,11 @@
+<LPCOpenCfg>
+	<symbol name="varFatfsUSBEnable" value="${varExampleEnable}"/>
+	<symbol name="varExampleDestInc"  value="example/inc"/>
+	<symbol name="varLocalIncEnable" value="${varExampleEnable}"/>
+	<module name="fatfs"/>
+	<template section="filelist" name="${varExampleEnable}" tool="xpresso">
+		<import src="${prjDestToRoot}/software/LPCUSBLib" dest="lpcusblib">
+			<copy>Drivers/USB/Class/Host/MassStorageClassHost.c</copy>
+		</import>
+	</template>
+</LPCOpenCfg>

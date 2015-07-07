@@ -1,0 +1,5 @@
+--create .\keil_output\core_m4\lib_lpc_board_bambino.lib
+.\keil_output\core_m4\board.o
+.\keil_output\core_m4\board_sysinit.o
+.\keil_output\core_m4\mem_tests.o
+.\keil_output\core_m4\lpc_phy_micrel.o

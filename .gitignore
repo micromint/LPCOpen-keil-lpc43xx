@@ -1,0 +1,59 @@
+# Private settings
+private_settings.py
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+tmp/
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Python
+*.py[cod]
+
+# Eclipse Project Files
+.cproject
+.project
+.pydevproject
+
+# uVision generated files
+*.uvopt
+*.uvgui.*
+
+*.plg
+*.map
+*.lst
+*.lnp
+*.htm
+*.dep
+*.d
+*.crf
+*.bak
+
+*.axf
+*.S19
+*.bin
+*.dep
+*.FLM
+
+# JLink files
+JLink*.*
+
+# Output directories
+Output
+Lst
+Obj
+
+# cscope
+cscope.*
+
+# ctags
+tags

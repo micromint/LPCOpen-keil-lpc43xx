@@ -1,0 +1,9 @@
+<LPCOpenCfg>
+	<symbol name="varExampleName"     value="sct_simplematch"/>
+	<template tool="xpresso" section="filelist" name="bambino_${varExampleName}">
+		<import src="${varExampleSrcDir}/bambino" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+</LPCOpenCfg>

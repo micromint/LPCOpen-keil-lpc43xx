@@ -1,0 +1,11 @@
+<LPCOpenCfg>
+	<symbol name="varBoardLibName"   value="lpc_board_${prjBoardName}_m0"/>
+	<symbol name="varCPUCore"        value="m0"/>
+	<symbol name="varChipPart"       value="LPC${prjChipName}-M0"/>
+	<symbol name="varChipLibName"    value="lpc_chip_${prjChipFamily}_m0"/>
+
+	<module name="libboard"/>
+	<template section="setting" name="${varBoardLibName}_incdir" tool="xpresso">
+		<value>${workspace_loc:/${varChipLibName}/inc/config_m0app}</value>
+	</template>
+</LPCOpenCfg>

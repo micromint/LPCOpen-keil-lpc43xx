@@ -1,0 +1,15 @@
+<LPCOpenCfg>
+	<symbol name="varExampleName"     value="sct_trafficlight"/>
+	<template tool="xpresso" section="filelist" name="hitex_eva_${prjChipName}_${varExampleName}">
+		<import src="${varExampleSrcDir}/hitex_eva_18504350" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+	<template tool="xpresso" section="filelist" name="keil_mcb_${prjChipName}_${varExampleName}">
+		<import src="${varExampleSrcDir}/keil_mcb_18574357" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+</LPCOpenCfg>

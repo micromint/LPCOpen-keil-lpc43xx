@@ -1,0 +1,11 @@
+<LPCOpenCfg>
+	<template tool="xpresso" section="filelist">
+		<import src="${varLwIPBaseDir}/contrib/apps/tcpecho_raw" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+	<template tool="xpresso" section="import" name="${varLwIPEnable}_lwip_src1">
+		<copy>arch/lpc18xx_43xx_systick_arch.c</copy>
+	</template>
+</LPCOpenCfg>

@@ -1,0 +1,18 @@
+<LPCOpenCfg>
+	<!-- symbols section -->
+	<symbol name="prjExampleSrcDir"     value="${varClassBaseDir}/sa_blinky_m4"/>
+
+	<!-- templates section -->
+	<template section="filelist" tool="xpresso">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/common" dest="${varExampleDestInc}">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="filelist" tool="xpresso">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/common" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+		</import>
+	</template>
+	<module name="basic_example"/>
+
+</LPCOpenCfg>

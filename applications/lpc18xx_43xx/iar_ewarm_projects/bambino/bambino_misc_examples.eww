@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\lib_lpc_chip_43xx.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\bambino\lib_lpc_board_bambino.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\clock_apis\clock_apis.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\gpdma_speed\gpdma_speed.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\otp_funcs\otp_funcs.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\iperf_server\iperf_server.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\pmc_states\pmc_states.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\sct_simplematch\sct_simplematch.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\misc\sdmmc_speed\sdmmc_speed.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

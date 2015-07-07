@@ -1,0 +1,4 @@
+<LPCOpenCfg>
+	<module name="basic_example"/>
+	<symbol name="prjExampleList"    value="clock_apis|gpdma_speed|iperf_server|otp_funcs|pmc_states|sdmmc_speed|sct_apps/sct_blinky|sct_apps/sct_simplematch|sct_apps/sct_trafficlight|lpcspifilib|spifilib_tst"/>
+</LPCOpenCfg>

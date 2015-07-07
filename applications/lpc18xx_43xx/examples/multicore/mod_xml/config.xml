@@ -1,0 +1,3 @@
+<LPCOpenCfg>
+	<module name="${prjCurrExampleName}" path="${varMCModPath}"/>
+</LPCOpenCfg>

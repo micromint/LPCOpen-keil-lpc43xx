@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+
+  <SchemaVersion>1.0</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <WorkspaceName>misc_examples</WorkspaceName>
+
+  <project>
+    <PathAndName>..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\lib_lpc_chip_43xx.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>..\..\..\..\software\lpc_core\lpc_board\boards_43xx\bambino\lib_lpc_board_bambino.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\lpcspifilib\lpcspifilib.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\gpdma_speed\gpdma_speed.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\sct_simplematch\sct_simplematch.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\clock_apis\clock_apis.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\otp_funcs\otp_funcs.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\sdmmc_speed\sdmmc_speed.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\pmc_states\pmc_states.uvproj</PathAndName>
+  </project>
+
+  <project>
+    <PathAndName>.\misc\iperf_server\iperf_server.uvproj</PathAndName>
+  </project>
+
+</ProjectWorkspace>

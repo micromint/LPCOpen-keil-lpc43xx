@@ -1,0 +1,17 @@
+<LPCOpenCfg>
+	<symbol name="varCPUCore"        value="m0"/>
+	<symbol name="varChipPart"       value="LPC${prjChipName}-M0"/>
+	<symbol name="varChipLibName"    value="lpc_chip_${prjChipFamily}_m0"/>
+	<symbol name="varChipConfigDir"  value="${varChipLibSrcDir}/config_${prjChipFamily}_m0app"/>
+	<symbol name="varCfgDestDir"     value="inc/config_m0app"/>
+
+	<module name="libchip"/>
+	<template section="filelist" tool="xpresso">
+		<import src="${varChipLibSrcDir}/config_43xx_m0sub" dest="inc/config_m0sub">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="setting" name="${varChipLibName}_incdir" tool="xpresso">
+		<value>${workspace_loc:/${ProjName}/inc/config_m0app}</value>
+	</template>
+</LPCOpenCfg>

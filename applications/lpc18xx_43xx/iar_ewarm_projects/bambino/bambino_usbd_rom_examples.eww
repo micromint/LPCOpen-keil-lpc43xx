@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\software\lpc_core\lpc_chip\chip_18xx_43xx\lib_lpc_chip_43xx.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\..\software\lpc_core\lpc_board\boards_43xx\bambino\lib_lpc_board_bambino.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\bwtest\bwtest.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\cdc_uart\cdc_uart.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\cdc_vcom\cdc_vcom.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\dfu_composite\dfu_composite.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\hid_generic\hid_generic.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\hid_keyboard\hid_keyboard.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\hid_mouse\hid_mouse.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\libusbdev\libusbdev.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\usbd_rom\msc_ram\msc_ram.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

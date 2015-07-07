@@ -1,0 +1,27 @@
+<LPCOpenCfg>
+	<symbol name="varSPIFILibName" value="lpcspifilib_${varCPUCoreNameEx}"/>
+	<symbol name="varSPIFILibPrjName" value="lib_lpcspifilib"/>
+	<symbol name="varSPIFILibTstDir" value="${prjDestToRoot}/software/lpcspifilib/test"/>
+
+	<template tool="xpresso" section="filelist">
+		<import src="${varSPIFILibTstDir}" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+
+	<template tool="xpresso" section="cfglist">
+		<setting id="linker.libs">
+			<value>${varSPIFILibName}</value>
+		</setting>
+		<setting id="compiler.inc">
+			<value>${workspace_loc:/${varSPIFILibPrjName}/inc}</value>
+		</setting>
+		<setting id="linker.paths">
+			<value>${workspace_loc:/${varSPIFILibPrjName}/lib}</value>
+		</setting>
+		<requires>
+			<value>${varSPIFILibPrjName}</value>
+		</requires>
+	</template>
+</LPCOpenCfg>

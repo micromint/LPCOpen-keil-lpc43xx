@@ -1,0 +1,96 @@
+<LPCOpenCfg>
+	<symbol name="prjExampleSrcDir"  value="${varClassBaseDir}/common"/>
+	<symbol name="varExampleDestInc" value="example/inc"/>
+	<symbol name="varLocalIncEnable" value="${varExampleEnable}"/>
+
+	<module name="basic_example"/>
+
+	<!-- Include generic blinky to all dualcore projects -->
+	<template tool="xpresso" section="filelist">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/blinky" dest="example/src">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+	</template>
+
+	<!-- Dualcore FreeRTOS section -->
+	<symbol name="var${prjCurrExampleName}_Freertos" value="standalone" options="default"/>
+	<symbol name="varFreertosMod"    value="${var${prjCurrExampleName}_Freertos}" options="default"/>
+	<symbol name="varfreertosEn"     value="${varExampleFullName}" options="default"/>
+	<symbol name="var${varFreertosMod}SName"     value="${varExampleFullName}" options="default"/>
+
+	<module name="${varFreertosMod}"/>
+	<template tool="xpresso" section="setting" name="${var${varFreertosMod}En}_cdef">
+		<value>OS_FREE_RTOS</value>
+	</template>
+
+	<template section="filelist" name="${var${varFreertosMod}En}" tool="xpresso">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/common/startup_code" dest="example/src">
+			<copy>cr_redlib_heap_fix.c</copy>
+		</import>
+	</template>
+
+	<!-- Dualcore Lwip section -->
+	<symbol name="varFatfsMEMEnable" value="${varExampleFullName}"/>
+	<symbol name="var${prjCurrExampleName}_Lwip" value="dummy" options="default"/>
+	<symbol name="varLwipMod"     value="${var${prjCurrExampleName}_Lwip}" options="default"/>
+	<symbol name="varlwipEn"      value="${varExampleFullName}" options="default"/>
+	<symbol name="var${varLwipMod}Fatfs" value="fatfs"/>
+
+	<module name="${varLwipMod}"/>
+	<module name="${varlwipFatfs}"/>
+
+	<module name="${varLwipMod}"/>
+	<template tool="xpresso" section="setting" name="${var${varLwipMod}En}_cdef">
+		<value>EXAMPLE_LWIP</value>
+	</template>
+	<template section="filelist" name="${var${varLwipMod}En}" tool="xpresso">
+		<import name="lwip_${varFreertosMod}_src" src="${prjDestToRoot}/${varClassBaseDir}/lwip/webserver" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+		<import src="${prjDestToRoot}/${varClassBaseDir}/lwip/webserver/configs" dest="${varExampleDestInc}">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template section="import" name="lwip_freertos_src" tool="xpresso">
+		<exclude>httpd.h</exclude>
+		<exclude>httpd.c</exclude>
+	</template>
+	<template section="import" name="lwip_standalone_src" tool="xpresso">
+		<exclude>netconn_fs.c</exclude>
+	</template>
+	<template tool="xpresso" section="import" name="${var${varLwipMod}En}_lwip_src1">
+		<copy>arch/lpc18xx_43xx_emac.c</copy>
+	</template>
+	<template tool="xpresso" section="import" name="${var${varLwipMod}En}_lwip_inc1">
+		<copy>arch/lpc18xx_43xx_emac.h</copy>
+	</template>
+	<template tool="xpresso" section="import" name="${varstandaloneSName}_lwip_src1">
+		<copy>arch/lpc18xx_43xx_systick_arch.c</copy>
+	</template>
+	<template tool="xpresso" section="import" name="${varfreertosSName}_lwip_src1">
+		<copy>arch/sys_arch_freertos.c</copy>
+	</template>
+	<template tool="xpresso" section="import" name="${varfreertosSName}_lwip_inc1">
+		<copy>arch/sys_arch.h</copy>
+	</template>
+
+	<!-- Dualcore USBD ROM section -->
+	<symbol name="var${prjCurrExampleName}UsbdEn" value="dummy" options="default"/>
+	<template tool="xpresso" section="setting" name="${var${prjCurrExampleName}UsbdEn}_incdir">
+		<value>${workspace_loc:/${varChipLibName}/inc/usbd}</value>
+	</template>
+	<template section="filelist" name="${var${prjCurrExampleName}UsbdEn}" tool="xpresso">
+		<import src="${prjDestToRoot}/${varClassBaseDir}/usbd_rom/msc_ram" dest="${varExampleDestSrc}">
+			<include>*.c</include>
+			<include>*.h</include>
+		</import>
+		<import src="${prjDestToRoot}/${varClassBaseDir}/usbd_rom/msc_ram/configs" dest="${varExampleDestInc}">
+			<include>*.h</include>
+		</import>
+	</template>
+	<template tool="xpresso" section="setting"  name="${var${prjCurrExampleName}UsbdEn}_cdef">
+		<value>EXAMPLE_USB_DEVICE</value>
+	</template>
+</LPCOpenCfg>
